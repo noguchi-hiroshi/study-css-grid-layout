@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearFix</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <div class="p-header">ClearFix</div>
+  <div class="p-main">
+    <div class="p-main__menu">
+      <ul>
+        <li><a href="/cf">cf</a></li>
+        <li><a href="/flex">flex</a></li>
+        <li><a href="/grid">grid</a></li>
+      </ul>
+    </div>
+    <div class="p-main__content">
+      <p><strong>HTML</strong></p>
+      <pre>
+        &lt;div class=&quot;p-header&quot;&gt;ClearFix&lt;/div&gt;
+        &lt;div class=&quot;p-main cf&quot;&gt;
+          &lt;div class=&quot;p-main__menu&quot;&gt;Menu&lt;/div&gt;
+          &lt;div class=&quot;p-main__content&quot;&gt;Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;p-footer&quot;&gt;Footer&lt;/div&gt;</pre>
+      <p><strong>CSS</strong></p>
+      <pre>        body {
+          margin: 0;
+          padding: 0;
+        }  
+        .p-header {
+          width: 100%;
+          height: 50px;
+          background: #fafafa;
+        }
+        .p-main {
+          height: calc(100vh - 150px);
+        }
+        .p-main__menu {
+          width: 200px;
+          height: 100%;
+          float: left;
+          background: #eee;
+        }
+        .p-main__content {
+          width: calc(100% - 200px);
+          float: left;
+          background: #fff;
+        }
+        .p-footer {
+          color: #fff;
+          height: 100px;
+          background: #333;
+        }  
+      </pre>
+    </div>
+  </div>
+  <div class="p-footer">Footer</div>
+</body>
+</html>

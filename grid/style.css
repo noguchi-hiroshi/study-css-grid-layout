@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template:
+      "header header" 50px
+      "menu content" 1fr
+      "footer footer" 100px
+      / 200px 1fr;
+}
+
+.p-header {
+  background: #fafafa;
+  grid-area: header;
+}
+
+.p-content {
+  background: #fff;
+  grid-area: content;
+}
+
+.p-menu {
+  background: #eee;
+  grid-area: menu;
+}
+
+.p-footer {
+  color: #fff;
+  background: #333;
+  grid-area: footer;
+}

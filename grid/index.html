@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Grid</title>
+</head>
+<body>
+  <header class="p-header">Grid</header>
+  <nav class="p-menu">
+    <ul>
+      <li><a href="/cf">cf</a></li>
+      <li><a href="/flex">flex</a></li>
+      <li><a href="/grid">grid</a></li>
+    </ul>
+  </nav>
+  <main class="p-content">
+    <p><strong>HTML</strong></p>
+    <pre>
+      &lt;header class=&quot;p-header&quot;&gt;Grid&lt;/header&gt;
+      &lt;nav class=&quot;p-menu&quot;&gt;Menu&lt;/nav&gt;
+      &lt;main class=&quot;p-content&quot;&gt;Content&lt;/main&gt;
+      &lt;footer class=&quot;p-footer&quot;&gt;Footer&lt;/footer&gt;
+    </pre>
+    <p><strong>CSS</strong></p>
+    <pre>
+      body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        min-height: 100vh;
+        grid-template:
+            "header header" 50px
+            "menu content" 1fr
+            "footer footer" 100px
+            / 200px 1fr;
+      }
+      .p-header {
+        background: #fafafa;
+        grid-area: header;
+      }
+      .p-content {
+        background: #fff;
+        grid-area: content;
+      }
+      .p-menu {
+        background: #eee;
+        grid-area: menu;
+      }
+      .p-footer {
+        color: #fff;
+        background: #333;
+        grid-area: footer;
+      }
+    </pre>
+  </main>
+  <footer class="p-footer">Footer</footer>
+</body>
+</html>
